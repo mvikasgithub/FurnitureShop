@@ -29,7 +29,7 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<a class="navbar-brand" href="//"> <img src="assets/images/logo.png" alt="Your Logo"></a>
-				<!-- div class="nav-collapse collapse navbar-responsive-collapse"-->
+				<div class="collapse nav-collapse">
 					<ul class ="nav navbar-nav">
 						<li class="active">
 							<a href="#">Home</a>

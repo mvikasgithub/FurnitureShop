@@ -7,7 +7,32 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>furnitureshop Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  	<spring.version>4.3.6.RELEASE</spring.version>
+  </properties>
   <dependencies>
+ 		<!--  JAVA EE -->
+	   <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+        <scope>provided</scope>
+    </dependency> 
+  	
+  		<!--  Spring WEB MVC Framework -->
+	   <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>4.3.6.RELEASE</version>
+    </dependency> 
+    <!-- JSTL -->
+	<dependency>
+        <groupId>jstl</groupId> 
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+    </dependency> 
+    	
+    	 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

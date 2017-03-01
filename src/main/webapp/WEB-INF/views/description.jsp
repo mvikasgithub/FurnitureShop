@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<%@page isELIgnored="false" %>
+
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+
+<c:url value="/resources/css" var="css"/>
+<c:url value="/resources/js" var="js"/>
+<c:url value="/resources/images" var="images"/><!DOCTYPE html>
 
 <html>
 <head>
@@ -33,11 +41,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
 					</button>
-					<a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Your Logo"></a>
+					<a class="navbar-brand" href="#"><img src="${images}/logo.png" alt="Your Logo"></a>
 				</div> <!-- end navbar-header -->
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="temp.html">Home</a></li>
+						<li class="active"><a href="/furnitureshop/index">Home</a></li>
 					</ul>
 				</div> <!-- end of collapse navbar-collapse -->
 			</div> <!-- end of container-fluid -->
@@ -45,7 +53,7 @@
   	<h2>Dinner Table</h2>
   	<p>A Mahogany table that can sit 6 people. The luxurious art work on the backrest and legs of the furniture will 
 		force you to admire the design everytime you eat. A sure shot dinner table conversatioon. Will surely impress you guests</p>            
-		<img src="assets/images/Carousel_1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		<img src="${images}/Carousel_1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 	
 	<!--  Add a hover - table now  with product code, type, description and price  -->
   	<table class="table table-hover">

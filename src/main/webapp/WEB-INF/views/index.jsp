@@ -55,8 +55,8 @@
 					</ul>
 					<!--  Sign up and Login glyphs will be right aligned hence navbar-right -->
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="register.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						<li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li><a href="/furnitureshop/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="/furnitureshop/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 					</ul>
 				</div> <!-- end of collapse navbar-collapse -->
 			</div> <!-- end of container-fluid -->
@@ -78,7 +78,7 @@
     			<div class="item active">
     			<!--  First photo on the carousel when clicked will take it to description page. Adding
     					this only for the first item  -->
-    			<a href="description.jsp"> 
+    			<a href="/furnitureshop/description"> 
       				<img src="${images}/Carousel_1.jpg" alt="Sofa">
       			</a>	
     			</div>

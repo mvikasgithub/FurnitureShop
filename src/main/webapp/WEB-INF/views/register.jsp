@@ -46,7 +46,7 @@
 				</div> <!-- end navbar-header -->
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.jsp">Home</a></li>
+						<li class="active"><a href="/furnitureshop/index">Home</a></li>
 					</ul>
 				</div> <!-- end of collapse navbar-collapse -->
 			</div> <!-- end of container-fluid -->

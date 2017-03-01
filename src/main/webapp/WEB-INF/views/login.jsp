@@ -47,7 +47,7 @@
 				</div> <!-- end navbar-header -->
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.jsp">Home</a></li>
+						<li class="active"><a href="/furnitureshop/index">Home</a></li>
 					</ul>
 				</div> <!-- end of collapse navbar-collapse -->
 			</div> <!-- end of container-fluid -->
@@ -61,7 +61,7 @@
 								<a href="#" class="active" id="login-form-link">Login</a>
 							</div>
 							<div class="col-xs-6">
-								<a href="register.jsp" id="register-form-link">Register</a>
+								<a href="/furnitureshop/register" id="register-form-link">Register</a>
 							</div>
 						</div>
 						<hr>

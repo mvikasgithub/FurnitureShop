@@ -20,14 +20,15 @@
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Bootstrap CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap CSS -->
-<link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="${css}/bootstrap-theme.min.css" rel="stylesheet">
 
 
 <!-- Custom CSS-->
-<link href="assets/css/styles.css" rel="stylesheet">
+<link href="${css}/styles.css" rel="stylesheet">
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 </head>
 <body>
@@ -56,17 +57,29 @@
 		<img src="${images}/Carousel_1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 	
 	<!--  Add a hover - table now  with product code, type, description and price  -->
-  	<table class="table table-hover">
+	
+  	<table  id = "LRFurnituresTable" class="table table-hover">
  
  
-    <tbody>
+    <thead>
       <tr>
-        <td>Product Code</td>
-        <td>Product Type</td>
-        <td>Description</td>
-		<td data-toggle="tooltip" title="Best Price !!!">Price</td> <!--  Enabling a tool tip for price -->
+        <th>Product Code</th>
+        <th>Product Type</th>
+        <th>Description</th>
+		<th data-toggle="tooltip" title="Best Price !!!">Price</td> <!--  Enabling a tool tip for price -->
       </tr>
-<!-- commenting hard coded earlier code    
+     </thead>
+     
+      <tfoot>
+       <tr>
+        <th>Product Code</th>
+        <th>Product Type</th>
+        <th>Description</th>
+		<th>Price</th> 
+      </tr>
+
+     </tfoot>
+<!-- vikas - commenting hard coded earlier code    
    <tr>
         <td>D125622</td>
         <td>Mohagany wood with Leather Upholstry</td>
@@ -79,7 +92,7 @@
         <td>A Mahogany wooden sofa with leather upholstry. Seats 3 comfortably</td>
 		<td>INR 12,5000</td>
       </tr>
- -->      
+    
 	<c:forEach items="${lrfurnitures}" var="furnitures">
 	<tr>
  		<td>${furnitures.code}</td>
@@ -89,14 +102,19 @@
  	</tr>
  	</c:forEach>
  	        
-    </tbody>
+    </tbody>-->
   </table>
+     
 </div>
 
 <!--  Java script to display the tool tip  -->
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
+
+
+
+<script src="${js}/jquery.js"></script>
+<script src="${js}/bootstrap.js"></script>
+<script src="${js}/jquery.dataTables.js"></script>
+<script src="${js}/dataTables.bootstrap.js"></script>
+<script src="${js}/myLRFurniture.js"></script>
 </body>
+</html>

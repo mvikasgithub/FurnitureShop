@@ -24,9 +24,9 @@
 
 
     <!--  Loading Static Resources -->
+    
     <mvc:annotation-driven />
 	<mvc:resources mapping="/resources/**" location="/assets/" />
     
-
     
   </beans>

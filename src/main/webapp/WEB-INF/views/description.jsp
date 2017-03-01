@@ -50,13 +50,14 @@
 				</div> <!-- end of collapse navbar-collapse -->
 			</div> <!-- end of container-fluid -->
 		</nav> <!-- end of navbar navbar-default -->
-  	<h2>Dinner Table</h2>
-  	<p>A Mahogany table that can sit 6 people. The luxurious art work on the backrest and legs of the furniture will 
-		force you to admire the design everytime you eat. A sure shot dinner table conversatioon. Will surely impress you guests</p>            
+  	<h2>Living Room</h2>
+  	<p>You can find an array of excellent hand crafted wooden furniture for your living room. These are guaranteed
+  	to get "wows" from your guests. Aesthetically desgined, ergonomically designed to match your personality</p>            
 		<img src="${images}/Carousel_1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 	
 	<!--  Add a hover - table now  with product code, type, description and price  -->
   	<table class="table table-hover">
+ 
  
     <tbody>
       <tr>
@@ -65,12 +66,29 @@
         <td>Description</td>
 		<td data-toggle="tooltip" title="Best Price !!!">Price</td> <!--  Enabling a tool tip for price -->
       </tr>
-      <tr>
+<!-- commenting hard coded earlier code    
+   <tr>
         <td>D125622</td>
-        <td>Mohagany wood with carvings</td>
-        <td>A Mahogany table that can sit 6 people. The luxurious art work on the backrest and legs of the furniture will force you to admire the design everytime you eat. A sure shot dinner table conversatioon. Will surely impress you guests</td>
+        <td>Mohagany wood with Leather Upholstry</td>
+        <td>A Mahogany wooden sofa with leather upholstry. Seats 3 comfortably</td>
 		<td>INR 12,5000</td>
       </tr>
+      <tr>
+        <td>D125622</td>
+        <td>Mohagany wood with Leather Upholstry</td>
+        <td>A Mahogany wooden sofa with leather upholstry. Seats 3 comfortably</td>
+		<td>INR 12,5000</td>
+      </tr>
+ -->      
+	<c:forEach items="${lrfurnitures}" var="furnitures">
+	<tr>
+ 		<td>${furnitures.code}</td>
+ 		<td>${furnitures.type}</td>
+ 		<td>${furnitures.description}</td>
+ 		<td>INR ${furnitures.price}</td>
+ 	</tr>
+ 	</c:forEach>
+ 	        
     </tbody>
   </table>
 </div>

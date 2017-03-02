@@ -58,7 +58,7 @@
 	
 	<!--  Add a hover - table now  with product code, type, description and price  -->
 	
-  	<table  id = "LRFurnituresTable" class="table table-hover">
+  	<table  id = "LRFurnituresTable" class="table table-bordered table-hover">
  
  
     <thead>
@@ -66,8 +66,10 @@
         <th>Product Code</th>
         <th>Product Type</th>
         <th>Description</th>
-		<th data-toggle="tooltip" title="Best Price !!!">Price</td> <!--  Enabling a tool tip for price -->
-      </tr>
+		<th>Price</th>	<!--<th data-toggle="tooltip" title="Best Price !!!">Price</th> --><!--  Enabling a tool tip for price -->
+		<th>Image</th>
+		<th>View</th>      
+	</tr>
      </thead>
      
       <tfoot>
@@ -76,6 +78,8 @@
         <th>Product Type</th>
         <th>Description</th>
 		<th>Price</th> 
+		<th>Image</th>
+		<th>View</th>
       </tr>
 
      </tfoot>

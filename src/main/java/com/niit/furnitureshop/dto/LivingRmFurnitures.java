@@ -1,8 +1,28 @@
 package com.niit.furnitureshop.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="FURNITURES")
 public class LivingRmFurnitures {
+	/*
+	 * Priavte Members
+	 */
+	
+	private String code;
+	private String type;
+	private String description;
+	private float price;
+	private String imageURL;
+	@Column(name = "is_active")
+	private boolean active = true;
 	
 
+	@Id
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	
 	public String getCode() {
 		return code;
@@ -34,7 +54,7 @@ public class LivingRmFurnitures {
 	public void setImageURL(String imageURL) {
 		this.imageURL = imageURL;
 	}
-	public boolean isActive() {
+	public boolean getActive() {
 		return active;
 	}
 	public void setActive(boolean active) {
@@ -42,16 +62,6 @@ public class LivingRmFurnitures {
 	}
 	
 	
-	/*
-	 * Priavte Members
-	 */
-	
-	private String code;
-	private String type;
-	private String description;
-	private float price;
-	private String imageURL;
-	private boolean active = true;
-	
+
 
 }

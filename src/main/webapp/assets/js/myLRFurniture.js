@@ -15,8 +15,8 @@ $(function(){
 		        {
 		            "mData": null,
 		            "bSortable": false,
-		           "mRender": function (o) { return '<a href="/furnitureshop/index.jsp" class="Image" title="Image"><img src="/furnitureshop/resources/images/logo.png" height="50" width="100"/></a>'; }
-
+		           "mRender": function (data, type, row) { return '<a href="/furnitureshop/show/'+row.code+'/productdetails" class="Image" title="Image"><img src="/furnitureshop/resources/images/logo.png" height="50" width="100"/></a>'; }
+		        		/* href="/show/+'row.code'+/productdetails"*/
 		        },
 		        {
 		            "mData": null,

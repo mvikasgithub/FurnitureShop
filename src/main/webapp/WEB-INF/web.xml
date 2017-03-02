@@ -13,5 +13,12 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Context Listener for working with Hibernate --> 
+	 <listener>
+	   <listener-class>
+	         org.springframework.web.context.ContextLoaderListener
+	   </listener-class>
+	 </listener>
 
 </web-app>

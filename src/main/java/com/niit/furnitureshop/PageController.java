@@ -2,6 +2,7 @@ package com.niit.furnitureshop;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -53,6 +54,19 @@ public class PageController {
 		
 		//passing the list of livingroom furntitures
 		mv.addObject("lrfurnitures", lrfDAO.list());
+		
+		return mv;
+	}
+	
+	@RequestMapping(value="/show/{code}/productdetails")
+	public ModelAndView description(@PathVariable("code") String code)
+	{
+		
+		ModelAndView mv = new ModelAndView("singleproduct");
+		//mv.addObject("title", "Hello World");
+		
+		//Select * from FURNITURE where code=code
+		mv.addObject("lrfurniture", lrfDAO.get(code));
 		
 		return mv;
 	}

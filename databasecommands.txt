@@ -1,0 +1,5 @@
+Insert into FURNITURES values ('LR12345', true, 'Some (first item) description', 'LR12345.jpg', 12500, 'Some (first) type')
+Insert into FURNITURES values ('LR12346', true, 'Some (second item) description', 'LR12346.jpg', 10000, 'Some (second) type');
+Insert into FURNITURES values ('LR12347', true, 'Some (third item) description', 'LR12346.jpg', 10000, 'Some (third) type');
+
+drop all objects;

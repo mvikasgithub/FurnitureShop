@@ -1,16 +1,24 @@
 package com.niit.furnitureshop.daoimpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.niit.furnitureshop.dao.LivingRoomFurnituresDAO;
 import com.niit.furnitureshop.dto.LivingRmFurnitures;
 
 @Repository("lrfDAO")
+@Transactional
 public class LivingRoomFurntiureDAOImpl implements LivingRoomFurnituresDAO {
 
+	@Autowired
+	public SessionFactory sessionfactory;
+	
+	/*
 	private static List<LivingRmFurnitures> lrfurnitureslst = new ArrayList<>();
 	
 	static
@@ -48,11 +56,19 @@ public class LivingRoomFurntiureDAOImpl implements LivingRoomFurnituresDAO {
 		
 		lrfurnitureslst.add(lrf);
 	}
-	
+	*/
 	@Override
 	public List<LivingRmFurnitures> list() {
 		// TODO Auto-generated method stub
-		return lrfurnitureslst;
+		//return lrfurnitureslst; //vikas - old code
+		
+		return sessionfactory.getCurrentSession().createQuery("FROM LivingRmFurnitures", LivingRmFurnitures.class).getResultList();
+		
 	}
 
+	public LivingRmFurnitures get(String code)
+	{
+		return sessionfactory.getCurrentSession().get(LivingRmFurnitures.class, code);
+	}
+	
 }

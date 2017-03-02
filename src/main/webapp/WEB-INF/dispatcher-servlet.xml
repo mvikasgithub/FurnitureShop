@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/mvc
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     
-    <context:component-scan base-package="com.niit" />
+
     
     <!--  Adding the viewResolver, prefix and suffix  -->
     <bean id="viewResolver"
@@ -23,10 +23,4 @@
     </bean>
 
 
-    <!--  Loading Static Resources -->
-    
-    <mvc:annotation-driven />
-	<mvc:resources mapping="/resources/**" location="/assets/" />
-    
-    
-  </beans>
+</beans>

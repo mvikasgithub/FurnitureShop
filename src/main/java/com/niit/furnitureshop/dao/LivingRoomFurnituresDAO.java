@@ -7,6 +7,7 @@ import com.niit.furnitureshop.dto.LivingRmFurnitures;
 public interface LivingRoomFurnituresDAO {
 
 	List<LivingRmFurnitures> list();
+	LivingRmFurnitures get(String code);
 	
 	
 }
